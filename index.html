@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+<!-- Add this inside your <head> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+
+
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <title>Acuity Consulting</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandRed: '#8D1414',
+                        brandBlue: '#000080',
+                        brandWhite: '#FFFFFF',
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+
+                        heading: ['Montserrat', 'sans-serif'],
+                        sans: ['Open Sans', 'sans-serif']
+                    },
+                    container: {
+                        center: true,
+                        padding: '1rem',
+                    },
+
+                },
+                screens: {
+                    sm: '480px',
+                    md: '768px',
+                    lg: '976px',
+                    xl: '1440px'
+                }
+            }
+        }
+    </script>
+
+  <style>
+    html{
+      scroll-behavior: smooth;
+    }
+  </style>
+
+</head>
+<body class="bg-gradient-to-b from-gray-50 to-gray-100 overflow-x-hidden">
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed top-0 left-0 w-full z-50 bg-white shadow-sm transition-all duration-300">
+  <div class="container mx-auto flex items-center justify-between p-4">
+    <!-- Logo -->
+    <div class="pt-2">
+      <h1 class="text-3xl md:text-4xl font-heading cursor-pointer text-brandBlue">Acuity</h1>
+    </div>
+
+    <!-- Menu Items -->
+    <div class="hidden lg:flex space-x-8 font-heading text-gray-800">
+      <a href="#" class="hover:text-red-700 transition">Home</a>
+      <a href="about.html" class="hover:text-red-700 transition">About Us</a>
+      <a href="#" class="hover:text-red-700 transition">Services</a>
+      <a href="industry.html" class="hover:text-red-700 transition">Industry</a>
+      <a href="#" class="hover:text-red-700 transition">Portfolio</a>
+    </div>
+
+    <!-- Button -->
+    <a href="#contact"
+       class="hidden lg:block p-3 px-6 pt-2 font-heading text-white bg-red-700 rounded-full hover:bg-red-600 transition">
+       Get Started
+    </a>
+
+    <!-- Hamburger Icon -->
+    <button id="menu-btn" class="lg:hidden text-3xl focus:outline-none text-red-700">
+      <i class="ri-menu-line"></i>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden fixed top-0 right-0 w-[70%] h-screen bg-gray-200/95 backdrop-blur shadow-2xl space-y-4 py-4 font-heading lg:hidden" data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease-in">
+    <div class="flex flex-col space-y-10 py-16 px-4">
+
+        <i class="ri-close-line lg:hidden text-4xl focus:outline-none text-red-700" id="close-btn"></i>
+
+      <a href="#" class="hover:text-red-700 text-2xl">Home</a>
+      <a href="about.html" class="hover:text-red-700 text-2xl">About Us</a>
+      <a href="#" class="hover:text-red-700 text-2xl">Services</a>
+      <a href="industry.html" class="hover:text-red-700 text-2xl">Industry</a>
+      <a href="#" class="hover:text-red-700 text-2xl">Portfolio</a>
+      <a href="#contact"
+        class="p-3 px-6 pt-2 font-heading text-2xl text-white bg-red-700 rounded-full hover:bg-red-600 transition">
+        Get Started
+      </a>
+    </div>
+  </div>
+</nav>
+    <!-- Hero Section -->
+    <div class="w-full mx-auto" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-out">
+        <div class="">
+            <div class="">
+                    <div class="relative h-[65vh] md:h-screen w-full">
+                        <img 
+                            src="images/hero1.jpg" 
+                            alt="serviceimg1"
+                            class="absolute inset-0 w-full h-full object-cover"
+                            loading="lazy">
+                        
+                        <div class="absolute inset-0 bg-black/50"></div>
+                          <div class="relative z-10 flex flex-col justify-center items-center h-full text-white text-center">
+                            <h1 class="font-heading text-2xl md:text-6xl font-bold mb-6 leading-tight" data-aos="fade-in" data-aos-duration="700">
+                                We Connect The Dots Between <span class="">Data.Research.Strategy</span>
+                            </h1>
+                            <p class="text-lg md:text-xl mb-8 text-gray-200">
+                                Leverage our expert statisticians and data specialists for your data projects.
+                            </p>
+                            <a href="#contact" class="bg-red-700 hover:bg-white hover:text-brandBlue px-6 py-3 rounded-full font-heading transition duration-300">
+                                Contact Us
+                            </a>
+
+                          </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <!-- Who we are section -->
+     <section class="mx-auto px-6 py-12 overflow-hidden">
+        <div class="container mx-auto px-4 md:w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div class="p-6" data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-out">
+                <h1 class="text-2xl md:text-3xl font-sans text-brandBlue py-2">What We Do</h1>
+                <p class="py-3 font-sans">Acuity Data Consulting is a research and data analytics firm that transforms complex information into actionable intelligence. We enable businesses, institutions, and researchers to make sharper, more confident decisions through advanced capabilities in statistical analysis, econometrics, business intelligence, and predictive modeling. </p>
+                <a href="" class="py-2 font-heading text-1xl text-red-700 hover:text-red-600">Read More</a>
+                <h1 class="text-2xl md:text-3xl font-sans text-brandBlue py-3">What Makes Us Different?</h1>
+                <p class="py-3 font-sans">At Acuity Data Consulting, we approach every project with the understanding that no two challenges are alike. So, we balance precision with strategic applicability, ensuring complex data is transformed into clear, actionable insights. We achieve this, by partnering with experts across industries, to deliver solutions that are analytically robust, strategically informed, and practical in driving real impact.</p>
+                <a href="" class="py-2 font-heading text-1xl text-red-700 hover:text-red-600">See How We Work</a>
+            </div>
+            <div class="" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-out">
+                <div class="">
+                    <img src="images/aboutusimg.jpg" alt="" class="rounded-2xl" loading="eager" decoding="sync">
+                </div>
+            </div>
+        </div>
+        </div>
+
+     </section>
+
+    <!-- Services Section -->
+<section 
+      class="mx-auto px-6 py-16" 
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+    >
+  <div class="container md:w-full mx-auto px-4">
+    <!-- Heading -->
+    <h1 class="text-3xl md:text-4xl font-sans text-brandBlue py-3 text-center font-semibold tracking-wide">
+      How Can We Assist You Today?
+    </h1>
+    <p class="text-lg font-poppins text-red-700 py-2 text-center max-w-2xl mx-auto">
+      Learn more about our core areas of expertise by selecting your topic of interest.
+    </p>
+
+    <!-- Cards Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 my-10">
+      
+      <!-- CARD -->
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-500 hover:-translate-y-2 hover:bg-gray-50 overflow-hidden">
+        <img src="images/statistics.jpg" alt="Statistical Analysis" class="h-[30vh] w-full object-cover">
+        <div class="p-6">
+          <p class="font-bold text-brandBlue text-xl mb-2">Statistical Analysis</p>
+          <p class="text-gray-600 mb-4">We work with institutions and researchers to advance knowledge and innovation using statistical techniques.</p>
+          <a href="#" class="inline-block p-3 px-6 text-sm font-poppins font-medium text-white bg-red-700 rounded-full hover:bg-red-600 transition-colors duration-300">
+            Learn More
+          </a>
+        </div>
+      </div>
+
+      <!-- CARD -->
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-500 hover:-translate-y-2 hover:bg-gray-50 overflow-hidden">
+        <img src="images/econometrics.jpg" alt="Econometrics" class="h-[30vh] w-full object-cover">
+        <div class="p-6">
+          <p class="font-bold text-brandBlue text-xl mb-2">Econometrics</p>
+          <p class="text-gray-600 mb-4">We apply advanced econometric models to uncover relationships, forecast outcomes, and guide policy and investment.</p>
+          <a href="#" class="inline-block p-3 px-6 text-sm font-poppins font-medium text-white bg-red-700 rounded-full hover:bg-red-600 transition-colors duration-300">
+            Learn More
+          </a>
+        </div>
+      </div>
+
+      <!-- CARD -->
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-500 hover:-translate-y-2 hover:bg-gray-50 overflow-hidden">
+        <img src="images/bi.jpg" alt="Business Intelligence" class="h-[30vh] w-full object-cover">
+        <div class="p-6">
+          <p class="font-bold text-brandBlue text-xl mb-2">Business Intelligence & Advisory</p>
+          <p class="text-gray-600 mb-4">We help organizations build dashboards, visualize data, and design business strategies powered by intelligence.</p>
+          <a href="#" class="inline-block p-3 px-6 text-sm font-poppins font-medium text-white bg-red-700 rounded-full hover:bg-red-600 transition-colors duration-300">
+            Learn More
+          </a>
+        </div>
+      </div>
+
+      <!-- CARD -->
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-500 hover:-translate-y-2 hover:bg-gray-50 overflow-hidden">
+        <img src="images/ai.jpg" alt="Machine Learning" class="h-[30vh] w-full object-cover">
+        <div class="p-6">
+          <p class="font-bold text-brandBlue text-xl mb-2">Machine Learning & AI</p>
+          <p class="text-gray-600 mb-4">Our team develops predictive models, NLP solutions, and AI-powered automation tailored to your business needs.</p>
+          <a href="#" class="inline-block p-3 px-6 text-sm font-poppins font-medium text-white bg-red-700 rounded-full hover:bg-red-600 transition-colors duration-300">
+            Learn More
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <!-- Empowerment Section -->
+     <section class="pt-12">
+        <div class="w-full" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-out">
+        <div class="">
+            <div class="">
+                    <div class="relative h-[60vh] w-full">
+                        <img 
+                            src="images/academic.jpg" 
+                            alt="serviceimg1"
+                            class="absolute inset-0 w-full h-full object-cover"
+                            loading="lazy">
+                        
+                        <div class="absolute inset-0 bg-black/70"></div>
+                          <div class="relative z-10 flex flex-col justify-center items-center h-full text-white text-center">
+                                <h2 class="font-heading text-2xl md:text-5xl">Empowering Academic Research</h2>
+                                <p class="font-sans md:w-1/2 text-[1.2rem] py-3 pb-4 px-4">We train universities and research institutions to apply advanced analytics to produce rigorous, impactful studies. Through hands-on training, Acuity Data Consulting equips faculty and students with the skills to thrive in research studies.</p>               
+                                <a href="" class="p-3 px-6 pt-2 font-heading text-white bg-red-700 rounded-full baseline hover:bg-red-600">Get Started</a>
+
+                          </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+     </section>
+
+     <!-- Future Section -->
+<section class="bg-gray-50 py-20 px-6 md:px-16 overflow-hidden">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-10 md:gap-10">
+
+    <!-- Left text block -->
+    <div data-aos="fade-right" data-aos-duration="1000" class="text-center md:text-left space-y-6">
+      <h2 class="text-3xl md:text-5xl font-bold text-[#000080] leading-tight">
+        We let you see the future, so you can act now
+      </h2>
+      <p class="text-gray-700 text-lg md:text-xl font-poppins">
+        At Acuity Data Consulting, we provide advanced analytics and insights that empower businesses and institutions to make smarter decisions today, while preparing for the opportunities of tomorrow.
+      </p>
+      <a href="#"
+         class="inline-flex items-center gap-3 bg-[#8D1414] hover:bg-red-700 text-white font-semibold px-8 py-4 rounded-full shadow-lg transition-transform duration-300 hover:scale-105">
+        Become A Client
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+             stroke-width="2" stroke="currentColor" class="w-5 h-5">
+          <path stroke-linecap="round" stroke-linejoin="round"
+                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+        </svg>
+      </a>
+    </div>
+
+    <!-- Right image block -->
+    <div data-aos="fade-left" data-aos-duration="1000" class="flex justify-center md:justify-end">
+      <img src="images/binoculars.jpg"
+           alt="Career growth"
+           class="rounded-2xl shadow-2xl w-full">
+    </div>
+
+  </div>
+</section>
+
+<!-- Insight Section -->
+<div class="w-full mx-auto overflow-x-hidden" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-out">
+  <div class="relative h-[50vh] md:h-[65vh] w-full overflow-x-hidden">
+    <img 
+      src="images/insideoffice.jpeg" 
+      alt="serviceimg1"
+      class="absolute inset-0 w-full h-full object-cover"
+      loading="lazy"
+    >
+
+    <div class="absolute inset-0 bg-black/70"></div>
+
+    <div class="relative z-10 flex flex-col justify-center items-center h-full text-white text-center px-4">
+      <h1 class="font-heading text-2xl md:text-6xl font-bold mb-6 leading-tight">
+        Client Success Story
+      </h1>
+      <h4 class="w-1/2 font-sansfont-semibold md:text-3xl mb-6 leading-tight">
+        How Orchid Beverages applied data-driven strategy and operational agility to improve margins and enhance customer experience: Harnessing lean manufacturing and agile supply chains to turn competitive pressure into profitable growth.
+      </h4>
+      <a href="#"
+         class="inline-flex items-center gap-3 bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-4 rounded-full shadow-lg transition-transform duration-300 hover:scale-105">
+        Read More
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+             stroke-width="2" stroke="currentColor" class="w-5 h-5">
+          <path stroke-linecap="round" stroke-linejoin="round"
+                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Contact Section -->
+<section id="contact" class="w-full bg-gray-100 py-16 px-6 md:px-12 lg:px-20">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    
+    <!-- Left Column: Text Info -->
+    <div data-aos="fade-right" data-aos-duration="800">
+      <h2 class="text-3xl md:text-5xl font-heading font-bold text-brandBlue mb-7">
+        Contact Us
+      </h2>
+      <p class="text-gray-700 text-lg mb-6 font-poppins leading-relaxed">
+        At Acuity Data Consulting, we specialize in transforming data into actionable insights. Our team helps businesses unlock growth opportunities by harnessing the power of analytics and business intelligence.
+      </p>
+      <ul class="space-y-4 text-gray-700 font-poppins">
+        <li class="flex items-center space-x-3">
+          <a href="#" class="text-gray-500 hover:text-red-500 text-2xl"><i class="ri-map-pin-fill"></i></a>
+          <span>Lagos, Nigeria</span>
+        </li>
+        <li class="flex items-center space-x-3">
+          <a href="#" class="text-gray-500 hover:text-red-500 text-2xl"><i class="ri-mail-fill"></i></a>
+          <span>info@acuitydata.com</span>
+        </li>
+        <li class="flex items-center space-x-3">
+          <a href="#" class="text-gray-500 hover:text-red-500 text-2xl"><i class="ri-phone-fill"></i></a>
+          <span>+234 800 000 0000</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Right Column: Contact Form -->
+    <div data-aos="fade-left" data-aos-duration="800" class="bg-white p-8 rounded-2xl shadow-lg">
+      <h3 class="text-2xl font-heading text-brandBlue mb-6">Send Us a Message</h3>
+      <form action="#" method="POST" class="space-y-5">
+        <div>
+          <label for="name" class="block text-gray-700 font-medium mb-2">Full Name</label>
+          <input type="text" id="name" name="name" required
+                 class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-700">
+        </div>
+        <div>
+          <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+          <input type="email" id="email" name="email" required
+                 class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-700">
+        </div>
+        <div>
+          <label for="message" class="block text-gray-700 font-medium mb-2">Your Message</label>
+          <textarea id="message" name="message" rows="5" required
+                    class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-700"></textarea>
+        </div>
+        <button type="submit"
+                class="w-full bg-red-700 text-white font-heading px-6 py-3 rounded-full hover:bg-red-600 transition duration-300">
+          Send Message
+        </button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Footer Section -->
+<footer class="bg-[#00071A] text-white py-10">
+  <div class="container mx-auto px-6 md:px-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- Logo & Description -->
+      <div>
+        <img src="images/acuitylogo.png" alt="Acuity Consulting Logo" class="h-12 mb-4">
+        <p class="text-gray-300 font-poppins text-sm leading-relaxed">
+          Empowering data-driven decision-making through research, analytics, and strategy.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h2 class="text-lg font-semibold mb-4 font-heading tracking-wide">Quick Links</h2>
+        <ul class="space-y-2">
+          <li><a href="#about" class="hover:text-red-500 transition duration-300">About Us</a></li>
+          <li><a href="#services" class="hover:text-red-500 transition duration-300">Our Services</a></li>
+          <li><a href="#projects" class="hover:text-red-500 transition duration-300">Projects</a></li>
+          <li><a href="#contact" class="hover:text-red-500 transition duration-300">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Socials -->
+      <div>
+        <h2 class="text-lg font-semibold mb-4 font-heading tracking-wide">Follow Us</h2>
+        <div class="flex space-x-4">
+          <a href="#" class="text-gray-300 hover:text-red-500 text-2xl"><i class="ri-linkedin-fill"></i></a>
+          <a href="#" class="text-gray-300 hover:text-red-500 text-2xl"><i class="ri-twitter-x-fill"></i></a>
+          <a href="#" class="text-gray-300 hover:text-red-500 text-2xl"><i class="ri-facebook-fill"></i></a>
+          <a href="#" class="text-gray-300 hover:text-red-500 text-2xl"><i class="ri-mail-fill"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-gray-600 mt-10 pt-6 text-center text-gray-400 text-sm">
+      &copy; <span id="year"></span> Acuity Consulting. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Auto-update year
+  document.getElementById("year").textContent = new Date().getFullYear()
+</script>
+
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+    
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

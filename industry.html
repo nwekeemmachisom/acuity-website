@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+<!-- Add this inside your <head> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+
+
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <title>Acuity Consulting - About Us</title>
+     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandRed: '#8D1414',
+                        brandBlue: '#000080',
+                        brandWhite: '#FFFFFF',
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+
+                        heading: ['Montserrat', 'sans-serif'],
+                        sans: ['Open Sans', 'sans-serif']
+                    },
+                    container: {
+                        center: true,
+                        padding: '1rem',
+                    },
+
+                },
+                screens: {
+                    sm: '480px',
+                    md: '768px',
+                    lg: '976px',
+                    xl: '1440px'
+                }
+            }
+        }
+    </script>
+    <style>
+      html{
+        scroll-behavior: smooth;
+      }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+   
+ <!-- Navbar -->
+    <nav id="navbar" class="fixed top-0 left-0 w-full z-50 bg-white shadow-sm transition-all duration-300">
+  <div class="container mx-auto flex items-center justify-between p-4">
+    <!-- Logo -->
+    <div class="pt-2">
+      <h1 class="text-3xl md:text-4xl font-heading cursor-pointer text-brandBlue">Acuity</h1>
+    </div>
+
+    <!-- Menu Items -->
+    <div class="hidden lg:flex space-x-8 font-heading text-gray-800">
+      <a href="index.html" class="hover:text-red-700 transition">Home</a>
+      <a href="about.html" class="hover:text-red-700 transition">About Us</a>
+      <a href="#" class="hover:text-red-700 transition">Services</a>
+      <a href="#" class="hover:text-red-700 transition">Industry</a>
+      <a href="#" class="hover:text-red-700 transition">Portfolio</a>
+    </div>
+
+    <!-- Button -->
+    <a href="#cta"
+       class="hidden lg:block p-3 px-6 pt-2 font-heading text-white bg-red-700 rounded-full hover:bg-red-600 transition">
+       Get Started
+    </a>
+
+    <!-- Hamburger Icon -->
+    <button id="menu-btn" class="lg:hidden text-3xl focus:outline-none text-red-700">
+      <i class="ri-menu-line"></i>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden fixed top-0 right-0 w-[70%] h-screen bg-gray-200/95 backdrop-blur shadow-2xl space-y-4 py-4 font-heading lg:hidden" data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease-in">
+    <div class="flex flex-col space-y-10 py-16 px-4">
+
+        <i class="ri-close-line lg:hidden text-4xl focus:outline-none text-red-700" id="close-btn"></i>
+
+      <a href="index.html" class="hover:text-red-700 text-2xl">Home</a>
+      <a href="about.html" class="hover:text-red-700 text-2xl">About Us</a>
+      <a href="#" class="hover:text-red-700 text-2xl">Services</a>
+      <a href="#" class="hover:text-red-700 text-2xl">Industry</a>
+      <a href="#" class="hover:text-red-700 text-2xl">Portfolio</a>
+      <a href="#cta"
+        class="p-3 px-6 pt-2 font-heading text-2xl text-white bg-red-700 rounded-full hover:bg-red-600 transition">
+        Get Started
+      </a>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+<!-- Hero Section -->
+    <div class="w-full mx-auto" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-out">
+        <div class="">
+            <div class="">
+                    <div class="relative h-[65vh] md:h-screen w-full ">
+                        <img 
+                            src="https://www.tigeranalytics.com/wp-content/uploads/2023/09/Partnerships-Banner-min.png" 
+                            alt="serviceimg1"
+                            class="absolute inset-0 w-full h-full object-cover"
+                            loading="lazy">
+                        
+                        <div class="absolute inset-0 bg-black/30"></div>
+                          <div class="relative z-10 flex flex-col justify-center items-center h-full text-white px-16 grid grid-cols-2 container mx-auto">
+                            <div>
+                              <h1 class="font-heading text-1xl md:text-6xl font-bold mb-6 leading-tight" data-aos="fade-in" data-aos-duration="700">
+                                Collaborating with industry leaders and technology giants for your growth
+                            </h1>
+                            <p class="mt-5 leading-relaxed">
+                             Achieving organizational success requires a thriving partner ecosystem. We understand the power of the right network to expedite your go-to-market, foster innovation, and enhance service delivery. We deliver value at scale, partnering with the leading cloud and technology platforms, and ensure you succeed.
+                            </p> 
+                            </div>                           
+
+                          </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+<!-- Industry Overview -->
+<section class="bg-white">
+  <div class="max-w-6xl mx-auto px-4 py-20">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
+      <div>
+        <h2 class="text-3xl font-bold text-slate-900">
+          Data-Driven Impact Across Sectors
+        </h2>
+        <p class="mt-5 text-slate-600 leading-relaxed">
+          Each industry faces unique challenges — fragmented data, evolving customer behavior, operational inefficiencies, or regulatory pressure. Our role is to transform complexity into insight, regardless of sector.
+        </p>
+        <p class="mt-4 text-slate-600">
+          We don’t believe in one-size-fits-all analytics. Every solution is tailored to your domain, goals, and decision environment.
+        </p>
+      </div>
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1556761175-129418cb2dfe?q=80&w=1200&auto=format&fit=crop"
+          alt="Professionals discussing analytics across industries"
+          class="rounded-2xl shadow-lg w-full object-cover"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Industry List -->
+<section class="bg-slate-50">
+  <div class="max-w-6xl mx-auto px-4 py-20">
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+
+      <!-- Industry Item -->
+      <div class="p-8 bg-white rounded-2xl border border-slate-200">
+        <h3 class="text-xl font-semibold text-slate-900">Finance & Fintech</h3>
+        <p class="mt-3 text-slate-600">
+          Risk modeling, fraud detection, customer segmentation, and performance analytics to support smarter financial decisions.
+        </p>
+      </div>
+
+      <div class="p-8 bg-white rounded-2xl border border-slate-200">
+        <h3 class="text-xl font-semibold text-slate-900">Healthcare & Life Sciences</h3>
+        <p class="mt-3 text-slate-600">
+          From patient outcomes to operational efficiency, we help healthcare teams leverage data responsibly and effectively.
+        </p>
+      </div>
+
+      <div class="p-8 bg-white rounded-2xl border border-slate-200">
+        <h3 class="text-xl font-semibold text-slate-900">Retail & E‑Commerce</h3>
+        <p class="mt-3 text-slate-600">
+          Customer behavior analysis, demand forecasting, and pricing insights that drive growth and retention.
+        </p>
+      </div>
+
+      <div class="p-8 bg-white rounded-2xl border border-slate-200">
+        <h3 class="text-xl font-semibold text-slate-900">Technology & SaaS</h3>
+        <p class="mt-3 text-slate-600">
+          Product analytics, churn prediction, and usage insights that help teams build better, data-informed products.
+        </p>
+      </div>
+
+      <div class="p-8 bg-white rounded-2xl border border-slate-200">
+        <h3 class="text-xl font-semibold text-slate-900">Logistics & Operations</h3>
+        <p class="mt-3 text-slate-600">
+          Optimize supply chains, improve forecasting accuracy, and gain visibility across complex operations.
+        </p>
+      </div>
+
+      <div class="p-8 bg-white rounded-2xl border border-slate-200">
+        <h3 class="text-xl font-semibold text-slate-900">Public Sector & NGOs</h3>
+        <p class="mt-3 text-slate-600">
+          Evidence-based insights to support policy decisions, resource allocation, and social impact measurement.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- How We Add Value -->
+<section class="bg-white">
+  <div class="max-w-6xl mx-auto px-4 py-20">
+    <div class="max-w-3xl">
+      <h2 class="text-3xl font-bold text-slate-900">How Acuity Adds Value</h2>
+      <p class="mt-5 text-slate-600 leading-relaxed">
+        Regardless of industry, our work is grounded in the same principles: clarity, rigor, and actionability.
+      </p>
+    </div>
+
+    <div class="mt-14 grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div>
+        <h4 class="font-semibold text-slate-900">Domain-Aware Analysis</h4>
+        <p class="mt-2 text-slate-600">We align analytics with real-world business context, not just numbers.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-slate-900">Scalable Data Solutions</h4>
+        <p class="mt-2 text-slate-600">From early-stage teams to enterprises, our solutions grow with you.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-slate-900">Decision-First Thinking</h4>
+        <p class="mt-2 text-slate-600">Every model, dashboard, and report is designed to drive action.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="bg-slate-500">
+  <div class="max-w-6xl mx-auto px-4 py-20 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-white">
+      Not Seeing Your Industry?
+    </h2>
+    <p class="mt-4 text-slate-300 max-w-2xl mx-auto">
+      Chances are, we’ve worked with similar challenges. Let’s talk about how Acuity can help you extract value from your data.
+    </p>
+    <a
+      href="#contact"
+      class="inline-flex mt-8 px-8 py-4 rounded-full bg-gradient-to-r from-blue-700 to-indigo-700 text-white font-semibold hover:from-blue-600 hover:to-indigo-600 transition"
+    >
+      Get in Touch
+    </a>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+    <!-- Footer Section -->
+<footer class="bg-[#00071A] text-white py-10">
+  <div class="container mx-auto px-6 md:px-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- Logo & Description -->
+      <div>
+        <img src="images/acuitylogo.png" alt="Acuity Consulting Logo" class="h-12 mb-4">
+        <p class="text-gray-300 font-poppins text-sm leading-relaxed">
+          Empowering data-driven decision-making through research, analytics, and strategy.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h2 class="text-lg font-semibold mb-4 font-heading tracking-wide">Quick Links</h2>
+        <ul class="space-y-2">
+          <li><a href="#about" class="hover:text-red-500 transition duration-300">About Us</a></li>
+          <li><a href="#services" class="hover:text-red-500 transition duration-300">Our Services</a></li>
+          <li><a href="#projects" class="hover:text-red-500 transition duration-300">Projects</a></li>
+          <li><a href="#contact" class="hover:text-red-500 transition duration-300">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Socials -->
+      <div>
+        <h2 class="text-lg font-semibold mb-4 font-heading tracking-wide">Follow Us</h2>
+        <div class="flex space-x-4">
+          <a href="#" class="text-gray-300 hover:text-red-500 text-2xl"><i class="ri-linkedin-fill"></i></a>
+          <a href="#" class="text-gray-300 hover:text-red-500 text-2xl"><i class="ri-twitter-x-fill"></i></a>
+          <a href="#" class="text-gray-300 hover:text-red-500 text-2xl"><i class="ri-facebook-fill"></i></a>
+          <a href="#" class="text-gray-300 hover:text-red-500 text-2xl"><i class="ri-mail-fill"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-gray-600 mt-10 pt-6 text-center text-gray-400 text-sm">
+      &copy; <span id="year"></span> Acuity Consulting. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

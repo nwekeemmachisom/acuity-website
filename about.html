@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+<!-- Add this inside your <head> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+
+
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <title>Acuity Consulting - About Us</title>
+     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandRed: '#8D1414',
+                        brandBlue: '#000080',
+                        brandWhite: '#FFFFFF',
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+
+                        heading: ['Montserrat', 'sans-serif'],
+                        sans: ['Open Sans', 'sans-serif']
+                    },
+                    container: {
+                        center: true,
+                        padding: '1rem',
+                    },
+
+                },
+                screens: {
+                    sm: '480px',
+                    md: '768px',
+                    lg: '976px',
+                    xl: '1440px'
+                }
+            }
+        }
+    </script>
+    <style>
+      html{
+        scroll-behavior: smooth;
+      }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+   
+ <!-- Navbar -->
+    <nav id="navbar" class="fixed top-0 left-0 w-full z-50 bg-white shadow-sm transition-all duration-300">
+  <div class="container mx-auto flex items-center justify-between p-4">
+    <!-- Logo -->
+    <div class="pt-2">
+      <h1 class="text-3xl md:text-4xl font-heading cursor-pointer text-brandBlue">Acuity</h1>
+    </div>
+
+    <!-- Menu Items -->
+    <div class="hidden lg:flex space-x-8 font-heading text-gray-800">
+      <a href="index.html" class="hover:text-red-700 transition">Home</a>
+      <a href="#" class="hover:text-red-700 transition">About Us</a>
+      <a href="#" class="hover:text-red-700 transition">Services</a>
+      <a href="industry.html" class="hover:text-red-700 transition">Industry</a>
+      <a href="#" class="hover:text-red-700 transition">Portfolio</a>
+    </div>
+
+    <!-- Button -->
+    <a href="#cta"
+       class="hidden lg:block p-3 px-6 pt-2 font-heading text-white bg-red-700 rounded-full hover:bg-red-600 transition">
+       Get Started
+    </a>
+
+    <!-- Hamburger Icon -->
+    <button id="menu-btn" class="lg:hidden text-3xl focus:outline-none text-red-700">
+      <i class="ri-menu-line"></i>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden fixed top-0 right-0 w-[70%] h-screen bg-gray-200/95 backdrop-blur shadow-2xl space-y-4 py-4 font-heading lg:hidden" data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease-in">
+    <div class="flex flex-col space-y-10 py-16 px-4">
+
+        <i class="ri-close-line lg:hidden text-4xl focus:outline-none text-red-700" id="close-btn"></i>
+
+      <a href="index.html" class="hover:text-red-700 text-2xl">Home</a>
+      <a href="#" class="hover:text-red-700 text-2xl">About Us</a>
+      <a href="#" class="hover:text-red-700 text-2xl">Services</a>
+      <a href="industry.html" class="hover:text-red-700 text-2xl">Industry</a>
+      <a href="#" class="hover:text-red-700 text-2xl">Portfolio</a>
+      <a href="#cta"
+        class="p-3 px-6 pt-2 font-heading text-2xl text-white bg-red-700 rounded-full hover:bg-red-600 transition">
+        Get Started
+      </a>
+    </div>
+  </div>
+</nav>
+   
+
+<!-- About Page Hero Section -->
+<section class="bg-slate-50 py-16">
+  <div class="max-w-6xl mx-auto px-4 py-20">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+      <!-- Text Content -->
+      <div>
+        <h1 class="text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
+          Turning Data Into Clear, Confident Decisions
+        </h1>
+        <p class="mt-6 text-lg text-slate-600 leading-relaxed">
+          At <span class="font-semibold text-slate-800">Acuity</span>, we help businesses uncover patterns, trends, and insights hidden within their data. Our focus is simple: transform complex datasets into actionable intelligence that drives smarter strategy and measurable growth.
+        </p>
+        <p class="mt-4 text-slate-600">
+          From data cleaning and analysis to visualization and reporting, we bring clarity where it matters most.
+        </p>
+      </div>
+
+      <!-- Image -->
+      <div class="relative">
+        <img
+          src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop"
+          alt="Data analysis dashboard with charts and insights"
+          class="rounded-2xl shadow-lg w-full object-cover"
+        />
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Our Values -->
+ <section class="bg-white pt-20 pb-10" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+  <div class="max-w-6xl mx-auto">
+    <div class="">
+      <h2 class="text-3xl text-brandBlue font-bold text-center mb-10">Our Values</h2>
+
+      <div class="px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
+        <div class="w-full py-6 px-6 bg-[#F7FBFF] rounded-2xl">
+          <h4 class="text-2xl text-red-700 font-heading py-3">Lifelong Learning</h4>
+          <p class="font-poppins font-light py-3 leading-relaxed">With the ever-changing scope of technology, a ‘never stop learning’ mindset is a necessity. We encourage our employees and our community to keep up with the latest developments in their fields.</p>
+        </div>
+        <div class="w-full py-6 px-6 bg-[#F7FBFF] rounded-2xl">
+          <h4 class="text-2xl font-heading py-3 text-red-700">Iterate</h4>
+          <p class="font-poppins font-light py-3 leading-relaxed">Hard work and perseverance is an important component in continued success; if at first, you don’t succeed, iterate.</p>
+        </div>
+        <div class="w-full py-6 px-6 bg-[#F7FBFF] rounded-2xl">
+          <h4 class="text-2xl font-heading py-3 text-red-700">First Class Service</h4>
+          <p class="font-poppins font-light py-3 leading-relaxed">We strive to deliver the best customer service in all that we do. When you get Iteration Insights, your organization is backed by the full team!</p>
+        </div>
+        <div class="w-full py-6 px-6 bg-[#F7FBFF] rounded-2xl">
+          <h4 class="text-2xl font-heading py-3 text-red-700">Collaboration</h4>
+          <p class="font-poppins font-light py-3 leading-relaxed">We are nothing without the team that supports us. By working together, and sharing information and knowledge, we empower our team and our partners to go further..</p>
+        </div>
+        <div class="w-full py-6 px-6 bg-[#F7FBFF] rounded-2xl">
+          <h4 class="text-2xl font-heading py-3 text-red-700">Thought Leadership</h4>
+          <p class="font-poppins font-light py-3 leading-relaxed">Technology moves faster every year, which is why it’s vitally important to stay at the forefront of innovation in business intelligence and data-driven solutions.</p>
+        </div>
+        <div class="w-full py-6 px-6 bg-[#F7FBFF] rounded-2xl">
+          <h4 class="text-2xl font-heading py-3 text-red-700">Community</h4>
+          <p class="font-poppins font-light py-3 leading-relaxed">By sharing knowledge and learning with those around us in the data analytics space, we foster growth and push the industry forward.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+ </section>
+
+
+<!-- See How We Work Section -->
+<section class="bg-white">
+  <div class="max-w-6xl mx-auto px-4 py-20">
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
+
+      <!-- Left: Text -->
+      <div data-aos="fade-right" data-aos-duration="700" data-aos-easing="ease-in-out">
+        <h2 class="text-3xl md:text-4xl font-bold text-brandBlue">
+          See How We Work
+        </h2>
+        <p class="mt-5 text-lg text-red-700 leading-relaxed">
+          Our Focus | Your Priority
+        </p>
+
+        <p class="text-md text-slate-600 leading-relaxed py-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos deserunt harum, perferendis, dolorum dolor beatae excepturi nulla eligendi recusandae soluta neque nesciunt perspiciatis aspernatur. Consequuntur exercitationem in laudantium iure optio.</p>
+        <a
+          href="#contact"
+          class="inline-flex mt-10 px-7 py-3 rounded-full bg-red-700  hover:bg-red-600 shadow-lg transition-transform duration-300  hover:scale-105 text-white font-semibold"
+        >
+          See Our Process in Action
+        </a>
+      </div>
+
+      <!-- Right: Visual -->
+      <div class="relative" data-aos="fade-left" data-aos-duration="700" data-aos-easing="ease-in-out">
+        <div class="">
+          <img
+            src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1200&auto=format&fit=crop"
+            alt="Team reviewing data insights and analytics"
+            class="rounded-xl w-full object-cover shadow-2xl"
+          />
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<section id="about" class="bg-white py-20">
+  <div class="max-w-6xl mx-auto px-6 lg:px-8">
+    
+    <!-- Heading -->
+    <div class="mb-20 bg-[#F7FBFF] py-7 rounded-2xl py-16 px-9" data-aos="fade-left" data-aos-duration="700" data-aos-easing="ease-in">
+      <h2 class="text-4xl font-bold text-brandBlue mb-4">Our Analytics Team</h2>
+      <p class="mx-auto leading-relaxed pt-3 pb-5">
+        With backgrounds across 11+ different industries, our team members possess broad skill-set and experience-base to understand a wide range of processes and data. This range of experience is only possible through our focus on mentoring every new team member as they transition to business analytics, and it has allowed for the maximum amount of growth and flexibility. Our team’s diversity, combined with their broad array of skills and chemistry to work together seamlessly, gives every partner we work with access to an agile, dedicated group of analysts with a deep pool of knowledge.
+      </p>
+    </div>
+
+    
+    <!-- Why Choose Us -->
+    <div class="mb-20" data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out">
+      <h3 class="text-3xl font-bold text-brandBlue text-center mb-10">Why Choose Acuity</h3>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+        
+        <div class="flex items-start space-x-4">
+          <div class="text-red-600 text-3xl">✔</div>
+          <p class="text-gray-700">Tailored solutions — no one-size-fits-all.</p>
+        </div>
+
+        <div class="flex items-start space-x-4">
+          <div class="text-red-600 text-3xl">✔</div>
+          <p class="text-gray-700">Experts in business, technology, and strategy.</p>
+        </div>
+
+        <div class="flex items-start space-x-4">
+          <div class="text-red-600 text-3xl">✔</div>
+          <p class="text-gray-700">Transparent communication and ongoing support.</p>
+        </div>
+
+        <div class="flex items-start space-x-4">
+          <div class="text-red-600 text-3xl">✔</div>
+          <p class="text-gray-700">Proven track record of quality and results.</p>
+        </div>
+
+        <div class="flex items-start space-x-4">
+          <div class="text-red-600 text-3xl">✔</div>
+          <p class="text-gray-700">Modern, digital, and future-focused approaches.</p>
+        </div>
+
+        <div class="flex items-start space-x-4">
+          <div class="text-red-600 text-3xl">✔</div>
+          <p class="text-gray-700">We bring clarity and direction to every project.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Contact CTA -->
+    <div class="text-center mt-20" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in" id="cta">
+      <h3 class="text-2xl font-semibold text-gray-800 mb-4">Let’s Work Together</h3>
+      <p class="text-gray-600 mb-6">Ready to move your business forward? We’re here to help.</p>
+      <a href="index.html#contact"
+         class="px-8 py-3 bg-red-600 text-white rounded-lg shadow hover:bg-red-700 transition">
+        Contact Us
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+    <!-- Footer Section -->
+<footer class="bg-[#00071A] text-white py-10">
+  <div class="container mx-auto px-6 md:px-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- Logo & Description -->
+      <div>
+        <img src="images/acuitylogo.png" alt="Acuity Consulting Logo" class="h-12 mb-4">
+        <p class="text-gray-300 font-poppins text-sm leading-relaxed">
+          Empowering data-driven decision-making through research, analytics, and strategy.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h2 class="text-lg font-semibold mb-4 font-heading tracking-wide">Quick Links</h2>
+        <ul class="space-y-2">
+          <li><a href="#about" class="hover:text-red-500 transition duration-300">About Us</a></li>
+          <li><a href="#services" class="hover:text-red-500 transition duration-300">Our Services</a></li>
+          <li><a href="#projects" class="hover:text-red-500 transition duration-300">Projects</a></li>
+          <li><a href="#contact" class="hover:text-red-500 transition duration-300">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Socials -->
+      <div>
+        <h2 class="text-lg font-semibold mb-4 font-heading tracking-wide">Follow Us</h2>
+        <div class="flex space-x-4">
+          <a href="#" class="text-gray-300 hover:text-red-500 text-2xl"><i class="ri-linkedin-fill"></i></a>
+          <a href="#" class="text-gray-300 hover:text-red-500 text-2xl"><i class="ri-twitter-x-fill"></i></a>
+          <a href="#" class="text-gray-300 hover:text-red-500 text-2xl"><i class="ri-facebook-fill"></i></a>
+          <a href="#" class="text-gray-300 hover:text-red-500 text-2xl"><i class="ri-mail-fill"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-gray-600 mt-10 pt-6 text-center text-gray-400 text-sm">
+      &copy; <span id="year"></span> Acuity Consulting. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
