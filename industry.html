@@ -67,7 +67,7 @@
     <div class="hidden lg:flex space-x-8 font-heading text-gray-800">
       <a href="index.html" class="hover:text-red-700 transition">Home</a>
       <a href="about.html" class="hover:text-red-700 transition">About Us</a>
-      <a href="#" class="hover:text-red-700 transition">Services</a>
+      <a href="services.html" class="hover:text-red-700 transition">Services</a>
       <a href="#" class="hover:text-red-700 transition">Industry</a>
       <a href="#" class="hover:text-red-700 transition">Portfolio</a>
     </div>
@@ -92,7 +92,7 @@
 
       <a href="index.html" class="hover:text-red-700 text-2xl">Home</a>
       <a href="about.html" class="hover:text-red-700 text-2xl">About Us</a>
-      <a href="#" class="hover:text-red-700 text-2xl">Services</a>
+      <a href="services.html" class="hover:text-red-700 text-2xl">Services</a>
       <a href="#" class="hover:text-red-700 text-2xl">Industry</a>
       <a href="#" class="hover:text-red-700 text-2xl">Portfolio</a>
       <a href="#cta"
@@ -108,32 +108,38 @@
 
 
 <!-- Hero Section -->
-    <div class="w-full mx-auto" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-out">
-        <div class="">
-            <div class="">
-                    <div class="relative h-[65vh] md:h-screen w-full ">
-                        <img 
-                            src="https://www.tigeranalytics.com/wp-content/uploads/2023/09/Partnerships-Banner-min.png" 
-                            alt="serviceimg1"
-                            class="absolute inset-0 w-full h-full object-cover"
-                            loading="lazy">
-                        
-                        <div class="absolute inset-0 bg-black/30"></div>
-                          <div class="relative z-10 flex flex-col justify-center items-center h-full text-white px-16 grid grid-cols-2 container mx-auto">
-                            <div>
-                              <h1 class="font-heading text-1xl md:text-6xl font-bold mb-6 leading-tight" data-aos="fade-in" data-aos-duration="700">
-                                Collaborating with industry leaders and technology giants for your growth
-                            </h1>
-                            <p class="mt-5 leading-relaxed">
-                             Achieving organizational success requires a thriving partner ecosystem. We understand the power of the right network to expedite your go-to-market, foster innovation, and enhance service delivery. We deliver value at scale, partnering with the leading cloud and technology platforms, and ensure you succeed.
-                            </p> 
-                            </div>                           
+ <div class="w-full mx-auto" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-out">
 
-                          </div>
-                    </div>
-                </div>
-        </div>
+  <div class="relative w-full h-[60svh] md:h-[100svh] ">
+
+    <!-- Background Image -->
+    <img 
+      src="https://www.tigeranalytics.com/wp-content/uploads/2023/09/Partnerships-Banner-min.png" 
+      alt="serviceimg1"
+      class="absolute inset-0 w-full h-full object-cover"
+      loading="lazy"
+    />
+
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black/30"></div>
+
+    <!-- Content -->
+    <div class="relative container z-10 h-full grid grid-cols-1 md:grid-cols-2 items-center px-6 md:px-16 text-white">
+      <div>
+        <h1 class="text-3xl md:text-6xl font-bold leading-tight" data-aos="fade-in">
+          Collaborating with industry leaders and technology giants for your growth
+        </h1>
+
+        <p class="mt-5 leading-relaxed text-gray-200">
+          Strategic partnerships that drive innovation and scalable success.
+        </p>
+      </div>
     </div>
+
+  </div>
+
+</div>
+
 
 <!-- Industry Overview -->
 <section class="bg-white">
@@ -168,42 +174,76 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
 
       <!-- Industry Item -->
-      <div class="p-8 bg-white rounded-2xl border border-slate-200">
+      <div class="p-8 bg-white rounded-2xl border border-slate-200 transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl">
+
+        <img 
+          src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1200&auto=format&fit=crop"
+          alt="Finance and fintech analytics"
+          class="w-full h-40 object-cover rounded-xl mb-5"
+        />
+
         <h3 class="text-xl font-semibold text-slate-900">Finance & Fintech</h3>
         <p class="mt-3 text-slate-600">
           Risk modeling, fraud detection, customer segmentation, and performance analytics to support smarter financial decisions.
         </p>
       </div>
 
-      <div class="p-8 bg-white rounded-2xl border border-slate-200">
+
+      <div class="p-8 bg-white rounded-2xl border border-slate-200 transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl">
+         <img 
+          src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d"
+          alt="Healthcare and life sciences"
+          class="w-full h-40 object-cover rounded-xl mb-5"
+        />
+
         <h3 class="text-xl font-semibold text-slate-900">Healthcare & Life Sciences</h3>
         <p class="mt-3 text-slate-600">
           From patient outcomes to operational efficiency, we help healthcare teams leverage data responsibly and effectively.
         </p>
       </div>
 
-      <div class="p-8 bg-white rounded-2xl border border-slate-200">
+      <div class="p-8 bg-white rounded-2xl border border-slate-200 transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl">
+         <img 
+          src="https://images.unsplash.com/photo-1542838132-92c53300491e"
+          alt="Healthcare and life sciences"
+          class="w-full h-40 object-cover rounded-xl mb-5"
+        />
         <h3 class="text-xl font-semibold text-slate-900">Retail & E‑Commerce</h3>
         <p class="mt-3 text-slate-600">
           Customer behavior analysis, demand forecasting, and pricing insights that drive growth and retention.
         </p>
       </div>
 
-      <div class="p-8 bg-white rounded-2xl border border-slate-200">
+      <div class="p-8 bg-white rounded-2xl border border-slate-200 transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl">
+        <img 
+          src="https://images.unsplash.com/photo-1518770660439-4636190af475"
+          alt="Healthcare and life sciences"
+          class="w-full h-40 object-cover rounded-xl mb-5"
+        />
         <h3 class="text-xl font-semibold text-slate-900">Technology & SaaS</h3>
         <p class="mt-3 text-slate-600">
           Product analytics, churn prediction, and usage insights that help teams build better, data-informed products.
         </p>
       </div>
 
-      <div class="p-8 bg-white rounded-2xl border border-slate-200">
+      <div class="p-8 bg-white rounded-2xl border border-slate-200 transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl">
+        <img 
+          src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d"
+          alt="Healthcare and life sciences"
+          class="w-full h-40 object-cover rounded-xl mb-5"
+        />
         <h3 class="text-xl font-semibold text-slate-900">Logistics & Operations</h3>
         <p class="mt-3 text-slate-600">
           Optimize supply chains, improve forecasting accuracy, and gain visibility across complex operations.
         </p>
       </div>
 
-      <div class="p-8 bg-white rounded-2xl border border-slate-200">
+      <div class="p-8 bg-white rounded-2xl border border-slate-200 transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl">
+        <img 
+          src="https://images.unsplash.com/photo-1507679799987-c73779587ccf"
+          alt="Healthcare and life sciences"
+          class="w-full h-40 object-cover rounded-xl mb-5"
+        />
         <h3 class="text-xl font-semibold text-slate-900">Public Sector & NGOs</h3>
         <p class="mt-3 text-slate-600">
           Evidence-based insights to support policy decisions, resource allocation, and social impact measurement.
@@ -244,7 +284,7 @@
 <!-- CTA -->
 <section class="bg-slate-500">
   <div class="max-w-6xl mx-auto px-4 py-20 text-center">
-    <h2 class="text-3xl md:text-4xl font-bold text-white">
+    <h2 class="text-3xl md:text-4xl font-bold">
       Not Seeing Your Industry?
     </h2>
     <p class="mt-4 text-slate-300 max-w-2xl mx-auto">

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <title>Acuity Consulting - Services</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandRed: '#8D1414',
+                        brandBlue: '#000080',
+                        brandWhite: '#FFFFFF',
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+
+                        heading: ['Montserrat', 'sans-serif'],
+                        sans: ['Open Sans', 'sans-serif']
+                    },
+                    container: {
+                        center: true,
+                        padding: '1rem',
+                    },
+
+                },
+                screens: {
+                    sm: '480px',
+                    md: '768px',
+                    lg: '976px',
+                    xl: '1440px'
+                }
+            }
+        }
+    </script>
+
+  <style>
+    html{
+      scroll-behavior: smooth;
+    }
+  </style>
+
+</head>
+<body>
+    <nav id="navbar" class="fixed top-0 left-0 w-full z-50 bg-white shadow-sm transition-all duration-300">
+  <div class="container mx-auto flex items-center justify-between p-4">
+    <!-- Logo -->
+    <div class="pt-2">
+      <h1 class="text-3xl md:text-4xl font-heading cursor-pointer text-brandBlue">Acuity</h1>
+    </div>
+
+    <!-- Menu Items -->
+    <div class="hidden lg:flex space-x-8 font-heading text-gray-800">
+      <a href="index.html" class="hover:text-red-700 transition">Home</a>
+      <a href="about.html" class="hover:text-red-700 transition">About Us</a>
+      <a href="#" class="hover:text-red-700 transition">Services</a>
+      <a href="industry.html" class="hover:text-red-700 transition">Industry</a>
+      <a href="#" class="hover:text-red-700 transition">Portfolio</a>
+    </div>
+
+    <!-- Button -->
+    <a href="index.html#contact"
+       class="hidden lg:block p-3 px-6 pt-2 font-heading text-white bg-red-700 rounded-full hover:bg-red-600 transition">
+       Get Started
+    </a>
+
+    <!-- Hamburger Icon -->
+    <button id="menu-btn" class="lg:hidden text-3xl focus:outline-none text-red-700">
+      <i class="ri-menu-line"></i>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden fixed top-0 right-0 w-[70%] h-screen bg-gray-200/95 backdrop-blur shadow-2xl space-y-4 py-4 font-heading lg:hidden" data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease-in">
+    <div class="flex flex-col space-y-10 py-16 px-4">
+
+        <i class="ri-close-line lg:hidden text-4xl focus:outline-none text-red-700" id="close-btn"></i>
+
+      <a href="index.html" class="hover:text-red-700 text-2xl">Home</a>
+      <a href="about.html" class="hover:text-red-700 text-2xl">About Us</a>
+      <a href="services.html" class="hover:text-red-700 text-2xl">Services</a>
+      <a href="industry.html" class="hover:text-red-700 text-2xl">Industry</a>
+      <a href="#" class="hover:text-red-700 text-2xl">Portfolio</a>
+      <a href="#contact"
+        class="p-3 px-6 pt-2 font-heading text-2xl text-white bg-red-700 rounded-full hover:bg-red-600 transition">
+        Get Started
+      </a>
+    </div>
+  </div>
+    </nav> 
+
+
+    <section class="relative bg-slate-900">
+  <div class="absolute inset-0">
+    <img
+      src="images/hero1.jpg"
+      alt="Data analytics and insights"
+      class="w-full h-full object-cover opacity-40"
+    />
+  </div>
+
+  <div class="relative max-w-6xl mx-auto px-4 py-28 text-white">
+    <h1 class="text-4xl md:text-6xl font-bold leading-tight max-w-3xl">
+      Data Analytics & Decision Support Services
+    </h1>
+    <p class="mt-6 text-lg text-slate-200 max-w-2xl leading-relaxed">
+      We help organizations turn data into clear, credible insights that support
+      confident decision-making — from strategy to execution.
+    </p>
+  </div>
+</section>
+
+
+<section class="bg-slate-50 py-20">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">
+      Our Core Services
+    </h2>
+    <p class="mt-4 text-slate-600 max-w-2xl mx-auto">
+      Our services are consulting-driven, practical, and focused on outcomes —
+      not just analysis.
+    </p>
+  </div>
+  <section class="py-20">
+  <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+    <div>
+      <h3 class="text-2xl md:text-3xl font-semibold text-slate-900">
+        Data Analytics & Insight Generation
+      </h3>
+      <p class="mt-4 text-slate-600 leading-relaxed">
+        We analyze data to uncover trends, patterns, and relationships that
+        inform better decisions. Our focus is not just on analysis, but on
+        translating findings into insights decision-makers can trust and act on.
+      </p>
+      <ul class="mt-6 space-y-2 text-slate-600">
+        <li>• Exploratory and statistical analysis</li>
+        <li>• Performance measurement</li>
+        <li>• Insight interpretation & reporting</li>
+      </ul>
+    </div>
+
+    <div>
+      <img
+        src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?q=80&w=1200&auto=format&fit=crop"
+        alt="Data analytics work"
+        class="rounded-2xl shadow-lg"
+      />
+    </div>
+
+  </div>
+</section>
+<section class="bg-slate-50 py-20">
+  <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+    <div class="md:order-2">
+      <h3 class="text-2xl md:text-3xl font-semibold text-slate-900">
+        Business Intelligence & Dashboards
+      </h3>
+      <p class="mt-4 text-slate-600 leading-relaxed">
+        We design dashboards and reporting systems that provide timely,
+        decision-focused visibility into business performance — without
+        unnecessary complexity.
+      </p>
+      <ul class="mt-6 space-y-2 text-slate-600">
+        <li>• KPI frameworks & reporting</li>
+        <li>• Interactive dashboards</li>
+        <li>• Executive-ready visualizations</li>
+      </ul>
+    </div>
+
+    <div class="md:order-1">
+      <img
+        src="https://images.unsplash.com/photo-1556155092-8707de31f9c4?q=80&w=1200&auto=format&fit=crop"
+        alt="Business intelligence dashboard"
+        class="rounded-2xl shadow-lg"
+      />
+    </div>
+
+  </div>
+</section>
+<section class="py-20">
+  <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+    <div>
+      <h3 class="text-2xl md:text-3xl font-semibold text-slate-900">
+        Predictive Analytics & Forecasting
+      </h3>
+      <p class="mt-4 text-slate-600 leading-relaxed">
+        We apply predictive models to help organizations anticipate outcomes,
+        manage risk, and plan with greater confidence.
+      </p>
+      <ul class="mt-6 space-y-2 text-slate-600">
+        <li>• Demand & performance forecasting</li>
+        <li>• Risk and scenario analysis</li>
+        <li>• Predictive modeling & validation</li>
+      </ul>
+    </div>
+
+    <div>
+      <img
+        src="https://images.unsplash.com/photo-1534751516642-a1af1ef26a56?q=80&w=1200&auto=format&fit=crop"
+        alt="Predictive analytics models"
+        class="rounded-2xl shadow-lg"
+      />
+    </div>
+
+  </div>
+</section>
+<section class="bg-slate-50 py-20">
+  <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+    <div class="md:order-2">
+      <h3 class="text-2xl md:text-3xl font-semibold text-slate-900">
+        Data Strategy & Advisory
+      </h3>
+      <p class="mt-4 text-slate-600 leading-relaxed">
+        We help organizations define how data supports their goals — aligning
+        analytics initiatives with business strategy, governance, and capability
+        development.
+      </p>
+      <ul class="mt-6 space-y-2 text-slate-600">
+        <li>• Data strategy & roadmaps</li>
+        <li>• Analytics capability assessment</li>
+        <li>• Decision-support frameworks</li>
+      </ul>
+    </div>
+
+    <div class="md:order-1">
+      <img
+        src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop"
+        alt="Data strategy workshop"
+        class="rounded-2xl shadow-lg"
+      />
+    </div>
+
+  </div>
+</section>
+
+</section>
+
+<section class="bg-slate-900 py-20">
+  <div class="max-w-4xl mx-auto px-4 text-center text-white">
+    <h2 class="text-3xl md:text-4xl font-bold">
+      Ready to Turn Your Data Into Insight?
+    </h2>
+    <p class="mt-4 text-slate-300">
+      Let’s discuss how Acuity can support your organization’s decision-making.
+    </p>
+    <a
+      href="#contact"
+      class="inline-block mt-8 px-8 py-3 bg-white text-slate-900 font-semibold rounded-lg hover:bg-slate-200 transition"
+    >
+      Get in Touch
+    </a>
+  </div>
+</section>
+
+
+
+
+    <footer class="bg-[#00071A] text-white py-10">
+  <div class="container mx-auto px-6 md:px-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- Logo & Description -->
+      <div>
+        <img src="images/acuitylogo.png" alt="Acuity Consulting Logo" class="h-12 mb-4">
+        <p class="text-gray-300 font-poppins text-sm leading-relaxed">
+          Empowering data-driven decision-making through research, analytics, and strategy.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h2 class="text-lg font-semibold mb-4 font-heading tracking-wide">Quick Links</h2>
+        <ul class="space-y-2">
+          <li><a href="#about" class="hover:text-red-500 transition duration-300">About Us</a></li>
+          <li><a href="#services" class="hover:text-red-500 transition duration-300">Our Services</a></li>
+          <li><a href="#projects" class="hover:text-red-500 transition duration-300">Projects</a></li>
+          <li><a href="#contact" class="hover:text-red-500 transition duration-300">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Socials -->
+      <div>
+        <h2 class="text-lg font-semibold mb-4 font-heading tracking-wide">Follow Us</h2>
+        <div class="flex space-x-4">
+          <a href="#" class="text-gray-300 hover:text-red-500 text-2xl"><i class="ri-linkedin-fill"></i></a>
+          <a href="#" class="text-gray-300 hover:text-red-500 text-2xl"><i class="ri-twitter-x-fill"></i></a>
+          <a href="#" class="text-gray-300 hover:text-red-500 text-2xl"><i class="ri-facebook-fill"></i></a>
+          <a href="#" class="text-gray-300 hover:text-red-500 text-2xl"><i class="ri-mail-fill"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-gray-600 mt-10 pt-6 text-center text-gray-400 text-sm">
+      &copy; <span id="year"></span> Acuity Consulting. All rights reserved.
+    </div>
+  </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
